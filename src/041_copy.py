@@ -9,8 +9,17 @@ import itertools
 
 import shutil
 
+dir1 = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs"
+dir2 = "/Users/nakamurasatoru/git/d_kunshujo/kunshujo-a/docs"
 
-shutil.copytree("/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/files/medium", "/Users/nakamurasatoru/git/d_kunshujo/kunshujo-a/docs/files/medium")
-shutil.copytree("/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/pd", "/Users/nakamurasatoru/git/d_kunshujo/kunshujo-a/docs/pd")
-shutil.copytree("/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/pp", "/Users/nakamurasatoru/git/d_kunshujo/kunshujo-a/docs/pp")
-shutil.copytree("/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/iiif", "/Users/nakamurasatoru/git/d_kunshujo/kunshujo-a/docs/iiif")
+map = {
+    dir1 + "/files/thumbnail" : dir2 + "/files/thumbnail",
+    dir1 + "/pd" : dir2 + "/pd",
+    dir1 + "/pp" : dir2 + "/pp"
+}
+
+for i in map:
+    out = map[i]
+    if os.path.exists(out):
+        shutil.rmtree(out)
+    shutil.copytree(i, out)
