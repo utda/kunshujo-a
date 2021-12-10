@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<title>Visualization powered by NYPL Public Domain Release 2016</title>
+<meta content="On January 6th, 2016, The New York Public Library made over 187K digital items in the public domain available for high resolution download. This is one of a number of demonstration projects illustrating creative reuse of public domain materials." name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="NYPL Public Domain Release 2016 - Visualization" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="http://publicdomain.nypl.org/pd-visualization/" property="og:url">
+<meta content="NYPL Public Domain Release 2016 - Visualization" property="og:title">
+<meta content="On January 6th, 2016, The New York Public Library made over 187K digital items in the public domain available for high resolution download. This is one of a number of demonstration projects illustrating creative reuse of public domain materials." property="og:description"/>
+<meta content="http://publicdomain.nypl.org/pd-visualization/img/pd_banner_magnified.png" property="og:image"/>
+<meta content="http://publicdomain.nypl.org/pd-visualization/img/pd_banner_magnified.png" name="image_src"/>
+<link href="http://publicdomain.nypl.org/pd-visualization/img/pd_banner_magnified.png" rel="image_src"/>
+<link href="css/app.css" rel="stylesheet"/>
+<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</meta></meta></meta></meta></head>
+<body>
+<div class="container" id="main">
+<div class="viz-container" id="viz">
+<div class="viz-images" id="viz-images">
+<img class="viz-image active" data-group="colors" src="img/colors_100_10_10.jpg"/>
+<!--
+        <img src="img/基本区分_100_10_10.jpg" data-group="基本区分" class="viz-image" />
+        <img src="img/収録DB_100_10_10.jpg" data-group="収録DB" class="viz-image" />
+        <img src="img/所蔵機関_100_10_10.jpg" data-group="所蔵機関" class="viz-image" />-->
+<!-- <img src="img/機械タグ_100_10_10.jpg" data-group="機械タグ" class="viz-image" /> -->
+<div class="item-info-box" id="item-info-box"></div>
+<img class="viz-image" data-group="帖数" src="img/帖数_100_10_10.jpg"/></div>
+<div class="viz-markers" id="viz-markers">
+<div class="sticky-content" id="sticky-content">testing testing testing</div>
+</div>
+</div>
+<div class="nav-container" id="nav">
+<div class="nav">
+<a class="info-button nav-item" href="#info">?</a>
+<div class="label nav-item">Group By:</div>
+<div class="nav-tabs" id="nav-tabs"></div>
+</div>
+</div>
+<div class="map-container">
+<div class="map" id="map">
+<img data-group="colors" src="img/colors_100_10_10.jpg"/>
+<!--
+        <img src="img/基本区分_100_10_10.jpg" data-group="基本区分" />
+        <img src="img/収録DB_100_10_10.jpg" data-group="収録DB" />
+        <img src="img/所蔵機関_100_10_10.jpg" data-group="所蔵機関" />-->
+<!-- <img src="img/機械タグ_100_10_10.jpg" data-group="機械タグ" /> -->
+<div class="map-window" id="map-window"></div>
+<img data-group="帖数" src="img/帖数_100_10_10.jpg"/></div>
+</div>
+</div>
+<div class="info overlay active">
+<div>
+<p>Visualization powered by <a href="http://publicdomain.nypl.org/pd-visualization/" target="_blank">Public Domain
+          Release
+          2016</a> - <a href="http://www.nypl.org/" target="_blank">The New York
+          Public Library</a></p>
+<p>
+<button class="info-button loading" id="loading-button"></button>
+</p>
+</div>
+</div>
+<div class="nypl-header">
+    Visualization powered by <a href="http://publicdomain.nypl.org/pd-visualization/" target="_blank">Public Domain
+      Release 2016</a> - <a href="http://www.nypl.org/" target="_blank">The New York
+      Public Library</a>
+</div>
+<div id="large-breakpoint"></div>
+<script src="js/vendor/jquery-1.11.3.min.js"></script>
+<!-- <script src="js/vendor/underscore-min.js"></script> -->
+<script src="js/vendor/jquery-ui-1.11.4.custom.min.js"></script>
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="js/vendor/jquery.hoverIntent.minified.js"></script>
+<script src="js/app.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1420324-131', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
